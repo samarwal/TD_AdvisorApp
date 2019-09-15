@@ -11,7 +11,7 @@
         android:layout_width="356dp"
         android:layout_height="24dp"
         android:layout_marginTop="64dp"
-        android:text="Payments"
+        android:text="Potential loan payments"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="18sp"
         android:textStyle="normal"
@@ -95,10 +95,10 @@
 
     <TextView
         android:id="@+id/loanInterestRate"
-        android:layout_width="356dp"
+        android:layout_width="350dp"
         android:layout_height="24dp"
         android:layout_marginTop="28dp"
-        android:text="Interest rate: 8%"
+        android:text="Fixed rate mortgage 8% over 25 years"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
@@ -110,8 +110,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="amount ($)"
         android:inputType="number|textPersonName|textEmailAddress"
-        android:text="amount"
         app:layout_constraintBottom_toBottomOf="@+id/loanMoneyDown"
         app:layout_constraintEnd_toEndOf="@+id/loanMoneyDown" />
 
@@ -121,6 +121,7 @@
         android:layout_height="88dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="60dp"
+        android:gravity="center"
         android:maxLines="3"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
         android:textSize="18sp"

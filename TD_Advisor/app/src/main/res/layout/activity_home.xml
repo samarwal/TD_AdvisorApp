@@ -20,8 +20,8 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="180dp"
+        android:layout_height="62dp"
         android:background="#35B234"
         android:text="Financial"
         android:textColor="#FFFFFF"
@@ -34,8 +34,8 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="180dp"
+        android:layout_height="62dp"
         android:background="#35B234"
         android:text="Mortgage"
         android:textColor="#FFFFFF"
@@ -48,8 +48,8 @@
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="180dp"
+        android:layout_height="62dp"
         android:background="#35B234"
         android:text="Investment"
         android:textColor="#FFFFFF"

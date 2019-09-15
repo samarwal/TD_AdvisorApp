@@ -40,11 +40,11 @@ public class FinancialActivity extends AppCompatActivity {
         // Messages
         TextView messageTextView = (TextView) findViewById(R.id.financialMessage);
         if (ranking == 1) {
-            messageTextView.setText("Over the last 3 months, you spent " + ((int) spendingRatio) + "% of your income. Consider spending less in your top spending categories shown below. It is also highly recommended that you talk to a nearby financial advisor.");
+            messageTextView.setText(MainActivity.CURRENT_CUSTOMER.getFirstName() + ", over the last 3 months you spent " + ((int) spendingRatio) + "% of your income. Consider spending less in your top spending categories shown below. It is also highly recommended that you talk to a nearby financial advisor.");
         } else if (ranking == 2) {
-            messageTextView.setText("Over the last 3 months, you spent " + ((int) spendingRatio) + "% of your income. Be aware of your top spending categories shown below.");
+            messageTextView.setText(MainActivity.CURRENT_CUSTOMER.getFirstName() + ", over the last 3 months you spent " + ((int) spendingRatio) + "% of your income. Be aware of your top spending categories shown below.");
         } else {
-            messageTextView.setText("Over the last 3 months, you spent " + ((int) spendingRatio) + "% of your income. Your top spending categories are shown below.");
+            messageTextView.setText(MainActivity.CURRENT_CUSTOMER.getFirstName() + ", over the last 3 months you spent " + ((int) spendingRatio) + "% of your income. Your top spending categories are shown below.");
         }
         messageTextView.setVisibility(View.VISIBLE);
         TextView advisorTextView = (TextView) findViewById(R.id.financialAdvisor);
