@@ -115,4 +115,19 @@
         app:layout_constraintBottom_toBottomOf="@+id/loanMoneyDown"
         app:layout_constraintEnd_toEndOf="@+id/loanMoneyDown" />
 
+    <TextView
+        android:id="@+id/financialAdvisor4"
+        android:layout_width="321dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="60dp"
+        android:maxLines="3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/ratingBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loanPaymentMonthly" />
+
 </android.support.constraint.ConstraintLayout>

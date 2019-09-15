@@ -18,6 +18,9 @@ public class MortgageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mortgage);
 
+        TextView advisorText = (TextView) findViewById(R.id.financialAdvisor4);
+        advisorText.setText("Financial advisor\nJohn Smith\n(416) 555-5555");
+
         // Savings holdings
         TextView savingsHoldingsText = (TextView) findViewById(R.id.loanSavingsHoldings);
         double savingsHoldings = 0.0;
