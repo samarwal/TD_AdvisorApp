@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.td_adviser.davinci.BankAccount;
-
 public class HomeActivity extends AppCompatActivity {
 
     private Button button;
@@ -48,7 +46,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void openMortgage() {
-        Intent intent = new Intent(this, Mortgage.class);
+        Intent intent = new Intent(this, MortgageActivity.class);
         startActivity(intent);
     }
 

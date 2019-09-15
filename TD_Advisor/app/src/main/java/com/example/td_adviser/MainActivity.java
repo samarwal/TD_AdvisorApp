@@ -178,14 +178,16 @@ public class MainActivity extends AppCompatActivity {
                                 String customerId = transaction.getString("customerId");
                                 String merchantId = transaction.has("merchantId") ? transaction.getString("merchantId") : "";
                                 String description = transaction.getString("description");
+                                String dateTime = transaction.getString("originationDateTime");
                                 double amount = transaction.getDouble("currencyAmount");
+                                String type = transaction.getString("type");
                                 Vector<String> categories = new Vector<String>();
                                 JSONArray categoriesJson = transaction.getJSONArray("categoryTags");
                                 for (int categoryIndex = 0; categoryIndex < categoriesJson.length(); categoryIndex++) {
                                     String category = categoriesJson.getString(categoryIndex);
                                     categories.add(category);
                                 }
-                                Transaction tx = new Transaction(id, customerId, merchantId, description, amount, categories);
+                                Transaction tx = new Transaction(id, customerId, merchantId, description, dateTime, amount, type, categories);
                                 CURRENT_CUSTOMER.addTransaction(tx);
                             }
                             onFinish.run();

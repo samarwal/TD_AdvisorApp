@@ -4,41 +4,115 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Mortgage">
+    tools:context=".MortgageActivity">
+
+    <TextView
+        android:id="@+id/loanPayments"
+        android:layout_width="356dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="64dp"
+        android:text="Payments"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loanInterestRate" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Mortgage Advice"
+        android:layout_width="356dp"
+        android:layout_height="64dp"
+        android:text="Mortgage  Advice"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.146" />
+        app:layout_constraintVertical_bias="0.074" />
 
-    <ProgressBar
-        android:id="@+id/progressBar3"
-        style="?android:attr/progressBarStyle"
+    <TextView
+        android:id="@+id/loanSavingsHoldings"
+        android:layout_width="356dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="32dp"
+        android:text="Savings holdings:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/loanPaymentWeekly"
+        android:layout_width="356dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="28dp"
+        android:text="Weekly:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loanPayments" />
+
+    <TextView
+        android:id="@+id/loanPaymentBiweekly"
+        android:layout_width="356dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="28dp"
+        android:text="Bi-weekly:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loanPaymentWeekly" />
+
+    <TextView
+        android:id="@+id/loanPaymentMonthly"
+        android:layout_width="356dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="28dp"
+        android:text="Monthly:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loanPaymentBiweekly" />
+
+    <TextView
+        android:id="@+id/loanMoneyDown"
+        android:layout_width="356dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="28dp"
+        android:text="Money down (principal):"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loanSavingsHoldings" />
+
+    <TextView
+        android:id="@+id/loanInterestRate"
+        android:layout_width="356dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="28dp"
+        android:text="Interest rate: 8%"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loanMoneyDown" />
+
+    <EditText
+        android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.373" />
-
-    <RatingBar
-        android:id="@+id/ratingBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.915" />
+        android:ems="10"
+        android:inputType="number|textPersonName|textEmailAddress"
+        android:text="amount"
+        app:layout_constraintBottom_toBottomOf="@+id/loanMoneyDown"
+        app:layout_constraintEnd_toEndOf="@+id/loanMoneyDown" />
 
 </android.support.constraint.ConstraintLayout>
