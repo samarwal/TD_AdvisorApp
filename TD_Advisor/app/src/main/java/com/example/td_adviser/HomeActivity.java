@@ -6,9 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class HomeActivity extends AppCompatActivity {
-    private Button button;
+import com.example.td_adviser.davinci.BankAccount;
 
+public class HomeActivity extends AppCompatActivity {
+
+    private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +40,6 @@ public class HomeActivity extends AppCompatActivity {
                 openInvestmentActivity();
             }
         });
-
     }
 
     public void openFinancialActivity() {

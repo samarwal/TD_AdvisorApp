@@ -2,6 +2,8 @@ package com.example.td_adviser.davinci;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
+import java.util.Vector;
 
 public class Customer {
 
@@ -13,6 +15,9 @@ public class Customer {
     private boolean isMale;
     private Date birthDate;
     private double totalIncome;
+
+    private Vector<BankAccount> bankAccounts = new Vector<BankAccount>();
+    private Vector<Transaction> transactions = new Vector<Transaction>();
 
     public Customer(String id, String firstName, String lastName, int age, boolean isMale, String birthDate, double totalIncome) {
         this.id = id;
@@ -54,6 +59,30 @@ public class Customer {
 
     public double getTotalIncome() {
         return totalIncome;
+    }
+
+    public void addBankAccount(BankAccount account) {
+        this.bankAccounts.add(account);
+    }
+
+    public Vector<BankAccount> getBankAccounts() {
+        return this.bankAccounts;
+    }
+
+    public double getTotalBankAccountBalance() {
+        double balance = 0;
+        for (BankAccount account : bankAccounts) {
+            balance += account.getBalance();
+        }
+        return balance;
+    }
+
+    public void addTransaction(Transaction transaction) {
+        this.transactions.add(transaction);
+    }
+
+    public Vector<Transaction> getTransactions() {
+        return this.transactions;
     }
 
 }
